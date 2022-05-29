@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+a {
+    text-decoration: none;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.login-page-container {
+    display: flex;
+    height: 100%;
+}
+
+.col {
+    width: 33%;
+}
+
+.col>img {
+    max-width: 100%;
+}
+
+.items-start,
+.items-end,
+.items-center {
+    display: flex;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.items-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-image {
+    max-width: 6rem;
+    width: 100%;
+}
+
+.logo-text {
+    max-width: 30rem;
+    width: 100%;
+}
+
+.login-col,
+.btn-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-btn img {
+    max-height: 0.813rem;
+}
+
+.login-btn {
+    width: 12.5rem;
+    height: 2.125rem;
+    padding: 0 20px;
+    border: 0.125rem solid rgb(235, 235, 235);
+    background-color: transparent;
+    border-radius: 1.688rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.login-btn span {
+    color: rgb(100, 31, 227);
+    font-size: 0.813rem;
+    font-weight: bold;
+}
+
+.margin-btn {
+    margin-top: 1.5rem;
+}
+
+.btn-section {
+    row-gap: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+
+    .items-start,
+    .items-end {
+        display: none;
+    }
+
+    .login-page-container {
+        justify-content: center;
+    }
+
+    .items-center {
+        width: 100%;
+    }
+
+    .login-col {
+        row-gap: 1rem;
+    }
+}
+
+.gray-bg {
+    background: #e5e5e5;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+}
+
+.m-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.invoice-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.relative {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-absolute {
+    position: fixed;
+    top: 50vh;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.logo-absolute img {
+    max-width: 15rem;
+}
+
+.invoice-generator {
+    margin: 5rem;
+    background: #fff;
+    height: 1000px;
+    padding: 2.5rem;
+}
+
+.invoice-generated {
+    width: 100%;
+    aspect-ratio: 1 / 1.4142;
+    background: #fff;
+    margin-top: 2rem;
+    z-index: 2;
+    padding: 1.5rem;
+}
+
+.top-2 {
+    margin-top: 2rem;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 4.2rem;
+    color: #716fcc;
+}
+
+.top-1 {
+    margin-top: 1rem;
+}
+.top-05{
+    margin-top: .5rem;
+}
+
+.title-invoice {
+    font-size: 3rem;
+}
+.bill-to-title{
+    font-size: 1.2rem;
+    color: #716fcc;
+}
+.right-align {
+    text-align: right;
+}
+.input-date::-webkit-calendar-picker-indicator{
+    background-image: url(/assets/images/calendar-icon.svg);
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+}
+.input-date{
+    padding-top: 5px;
+}
+.blue{
+    color: #716fcc !important;
+}
+
+.create-new-invoice {
+    font-weight: 700;
+    color: #716fcc;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.two-col-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+}
+
+.input-logo {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.label-logo {
+    display: flex;
+    cursor: pointer;
+    background: #e5e5e5;
+    width: 100%;
+    height: 100%;
+    pointer-events: all;
+    align-items: center;
+    justify-content: center;
+    color: #c0bed5;
+    font-weight: 550;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+}
+
+.logo-display {
+    width: 80%;
+    aspect-ratio: 10 / 7;
+    pointer-events: none;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.invoice-input,
+.invoice-textarea {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #e5e5e5;
+    font-size: 1.1rem;
+    color: #53566f;
+    outline: none;
+    font-weight: 700;
+    padding-right: 10px;
+}
+.invoice-textarea {
+    resize: none;
+    padding-top: .6rem;
+}
+
+.invoice-textarea:focus,
+.invoice-textarea:focus-visible {
+    height: 140px;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.invoice-input:focus,
+.invoice-input:focus-visible,
+.invoice-textarea:focus,
+.invoice-textarea:focus-visible {
+    border: none;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    background: #fff;
+}
+
+.invoice-input::placeholder,
+.invoice-textarea::placeholder {
+    font-size: 1.1rem;
+    color: #c0bed5;
+    font-weight: 700;
+}
+
+.invoice-text {
+    font-size: 1rem;
+    color: #000;
+    font-weight: 600;
+}
+.invalid, .invalid:focus, .invalid:focus-visible{
+    border: 1px solid #f00;
+    box-shadow: none;
+    background-color: rgba(255, 0, 0, .1);
+    background-image: url(/assets/images/invalid-input.svg);
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem)  center;
+    background-size: 20px;
+}
+.invalid::placeholder{
+    color: #f00;
+}
+.invalid-message{
+    color: #f00;
+    font-weight: 500;
+    margin-top: 3px;
+    display: none;
+}
+.invalid + .invalid-message{
+    display: block;
+}
+#your-phone-invoice{
+    display: none;
+}
+#your-phone-invoice.show{
+    display: block;
+}
+.flex-invoice-container{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: .5rem;
+}

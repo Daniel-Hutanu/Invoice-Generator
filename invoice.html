@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="gray-bg">
+        <div class="container m-auto invoice-container">
+            <div>
+                <div class="invoice-generator">
+                    <form class="invoice-form">
+                        <div class="two-col-grid">
+                            <div>
+                                <div class="logo-display" id="display-logo">
+                                    <input type="file" name="image-input" id="image-input" accept="image/*"
+                                        class="input-logo">
+                                    <label for="image-input" class="label-logo" id="logo-label">Upload Logo File</label>
+                                </div>
+                            </div>
+                            <div>
+                                <h1 class="title right-align">Invoice</h1>
+                                <div class="top-2 right-align">
+                                    <span class="create-new-invoice">
+                                        Create New Invoice
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="two-col-grid top-1">
+                            <div>
+                                <input type="text" class="invoice-input" id="company" placeholder="Your company name">
+                                <p class="invalid-message">This field cannot be empty</p>
+                                <textarea class="invoice-textarea top-1" id="your-address"
+                                    placeholder="Address"></textarea>
+                                <p class="invalid-message">This field cannot be empty</p>
+                                <input type="text" class="invoice-input top-1" id="your-vat-no" placeholder="VAT no.">
+                                <p class="invalid-message">This field cannot be empty</p>
+                                <input type="text" class="invoice-input top-1" id="your-phone" placeholder="Tel">
+                                <p class="invalid-message">This field can contain only numbers and "+" sign.</p>
+                            </div>
+                            <div>
+                                <input type="text" class="invoice-input" id="your-invoice-number"
+                                    placeholder="Invoice no (ex. string-number)">
+                                <p class="invalid-message">This field cannot be empty</p>
+                                <input type="date" class="invoice-input top-1 input-date" id="your-invoice-date">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="logo-absolute">
+                    <img src="assets/images/logo.png">
+                </div>
+                <div class="invoice-generated">
+                    <div class="two-col-grid">
+                        <div>
+                            <div class="logo-display" id="display-logo-invoice"></div>
+                            <p class="top-1 invoice-text" id="company-invoice">Company name</p>
+                            <p class="top-05 invoice-text" id="your-adress-invoice">Adress</p>
+                            <p class="top-05 invoice-text" id="your-vat-invoice">VAT no.: </p>
+                            <p class="top-05 invoice-text" id="your-phone-invoice"></p>
+                        </div>
+                        <div>
+                            <h1 class="title title-invoice right-align">Invoice</h1>
+                        </div>
+                    </div>
+                    <h6 class="bill-to-title top-1">Bill to</h6>
+                    <div class="two-col-grid top-05">
+                        <div>
+                            <p class="invoice-text" id="">to do</p>
+                            <p class="invoice-text top-05" id="">to do</p>
+                            <p class="invoice-text top-05" id="">to do</p>
+                            <p class="invoice-text top-05" id="">to do</p>
+                        </div>
+                        <div class="right-align">
+                            <div class="flex-invoice-container">
+                                <p class="invoice-text blue">Invoice no. </p>
+                                <p class="invoice-text" id="your-invoice-number-invoice"></p>
+                            </div>
+                            <div class="flex-invoice-container top-05">
+                                <p class="invoice-text blue">Invoice date </p>
+                                <p class="invoice-text" id="your-invoice-date-invoice"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
